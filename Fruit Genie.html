@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="FGstyle" href="Fruit%20Genie.css" type="text/css" />
+
+    <title> Fruit Genie </title>
+
+    <h1> I am the Fruit Genie!</h1>
+    <h2>
+        <p> With my magical powers (deductive reasoning), I can guess what kind of fruit you are thinking of! I bet you can't outsmart me!</p>
+    </h2>
+
+</head>
+
+<form>
+    <input type="button" id="yes" value="Yes" />
+    <input type="button" id="no" value="No" />
+    <input type="button" id="" value="Maybe" />
+</form>
+<div id="display"></div>
+
+<body>
+
+    <script>
+        "use strict";
+        
+        function main() {
+            getElem("yes").onclick =getQuestion(q);
+            
+        }
+        
+          function getElem(id) {
+            return document.getElementById(id);
+        }
+        
+        function getQuestion(){
+            
+        }
+        
+
+    </script>
+</body>
+
+</html>

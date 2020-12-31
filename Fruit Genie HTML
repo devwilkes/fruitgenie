@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title> Fruit Genie </title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+
+        let site = String(prompt("Enter the name of your perferred search engine:"));
+        let google = "https://www.google.com/search?q=";
+        let yahoo = "https://search.yahoo.com/search?p=";
+        let duckgo = "https://duckduckgo.com/";
+
+
+        if (!(site == "google") && !(site == "yahoo") && !(site = "duckduckgo")) {
+            alert("Invalid Engine");
+        } else {
+
+            let term = String(prompt("Enter a search term:"));
+            let searchg = google + term;
+            let searchy = yahoo + term;
+            let searchd = duckgo + term;
+
+            if (site == "yahoo") {
+                window.open(searchy);
+            } else if (site == "google") {
+                window.open(searchg);
+            } else
+                window.open(searchd);
+        }
+
+    </script>
+</body>
+
+</html>
